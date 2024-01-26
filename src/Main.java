@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 class PhoneBook {
     private static HashMap<String, ArrayList<Integer>> phoneBook = new HashMap<>();
+    
     public static void add(String name, Integer phoneNum) {
         if (phoneBook.containsKey(name))
             if(phoneBook.get(name).contains(phoneNum))
